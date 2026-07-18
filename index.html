@@ -1,190 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WASL MOTOR | Premium Vehicle Sales</title>
+<title>WASL MOTOR | Qatar</title>
+
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
+
 
 body{
-    background:#050505;
-    color:white;
+background:#07192f;
+color:white;
+overflow-x:hidden;
 }
 
-/* Header */
 
-header{
-    height:90px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 8%;
-    background:#000;
+
+/* NAVBAR */
+
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(15px);
+z-index:1000;
+
 }
+
 
 .logo img{
-    width:130px;
-}
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-size:16px;
+height:70px;
+
 }
 
 
-/* Hero */
+.navbar ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+
+.navbar a{
+
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+
+}
+
+
+.navbar a:hover{
+
+color:#d4af37;
+
+}
+
+
+
+/* HERO */
+
 
 .hero{
-    height:650px;
-    background:
-    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
-    url("car.jpg");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    padding:0 8%;
+
+height:100vh;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
 }
+
+
+.hero video{
+
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+
+.overlay{
+
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(3,15,40,.65);
+
+}
+
+
+.hero-content{
+
+position:relative;
+z-index:5;
+
+}
+
 
 .hero h1{
-    font-size:55px;
-    max-width:700px;
+
+font-size:75px;
+color:#d4af37;
+margin-bottom:15px;
+
 }
 
-.hero span{
-    color:#d4af37;
+
+.hero h2{
+
+font-size:34px;
+margin-bottom:20px;
+
 }
+
 
 .hero p{
-    margin-top:20px;
-    font-size:20px;
-}
 
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 40px;
-    background:#d4af37;
-    color:black;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
+font-size:22px;
+margin-bottom:40px;
+color:#ddd;
+
 }
 
 
-/* Counters */
 
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    padding:70px 5%;
-}
+.buttons{
 
-.card{
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(10px);
-    padding:40px;
-    width:250px;
-    text-align:center;
-    border-radius:20px;
-}
+display:flex;
+justify-content:center;
+gap:25px;
 
-.card h2{
-    color:#d4af37;
-    font-size:45px;
 }
 
 
-/* Services */
+
+.gold-btn{
+
+background:#d4af37;
+padding:18px 45px;
+border-radius:40px;
+color:#07192f;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+
+}
+
+
+.gold-btn:hover{
+
+transform:scale(1.08);
+
+}
+
+
+
+.outline-btn{
+
+padding:18px 45px;
+border:2px solid #d4af37;
+border-radius:40px;
+text-decoration:none;
+color:white;
+transition:.3s;
+
+}
+
+
+.outline-btn:hover{
+
+background:#d4af37;
+color:#07192f;
+
+}
+
+
+/* CARS */
+
+.cars-section{
+
+padding:100px 80px;
+
+}
+
+
+.cars-section h2,
+.services h2{
+
+text-align:center;
+font-size:45px;
+color:#d4af37;
+margin-bottom:50px;
+
+}
+
+
+
+.cars-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+
+.car-card{
+
+background:rgba(255,255,255,.08);
+border-radius:25px;
+overflow:hidden;
+backdrop-filter:blur(15px);
+transition:.5s;
+
+}
+
+
+.car-card:hover{
+
+transform:translateY(-15px);
+
+}
+
+
+.car-card img{
+
+width:100%;
+height:250px;
+object-fit:cover;
+
+}
+
+
+.car-card div{
+
+padding:25px;
+
+}
+    .car-card div{ padding:25px; }
+    /* NUMBERS */
+
+.numbers{
+
+display:flex;
+justify-content:center;
+gap:40px;
+padding:80px;
+background:#050d1c;
+
+}
+
+
+.number-box{
+
+width:250px;
+padding:40px;
+text-align:center;
+background:rgba(255,255,255,.08);
+border-radius:20px;
+backdrop-filter:blur(15px);
+
+}
+
+
+.number-box h2{
+
+font-size:55px;
+color:#d4af37;
+
+}
+
+
+
+/* SERVICES */
 
 .services{
-    padding:60px 8%;
-}
 
-.services h2{
-    text-align:center;
-    font-size:40px;
-    margin-bottom:40px;
-}
+padding:100px 80px;
 
-.boxes{
-    display:flex;
-    gap:25px;
-}
-
-.box{
-    flex:1;
-    padding:35px;
-    background:#111;
-    border:1px solid #333;
-    border-radius:20px;
-    transition:.4s;
-}
-
-.box:hover{
-    transform:translateY(-10px);
-    border-color:#d4af37;
 }
 
 
-/* Footer */
+.service-container{
+
+display:flex;
+gap:30px;
+
+}
+
+
+.service-card{
+
+flex:1;
+padding:40px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(212,175,55,.3);
+border-radius:25px;
+backdrop-filter:blur(15px);
+transition:.4s;
+
+}
+
+
+.service-card:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+/* FOOTER */
 
 footer{
-    background:#000;
-    text-align:center;
-    padding:40px;
-    margin-top:50px;
-}
 
-footer span{
-    color:#d4af37;
+background:#030914;
+text-align:center;
+padding:60px 20px;
+
 }
 
 
-/* Animation */
+footer img{
 
-.hero div{
-    animation:fade 1.5s;
-}
+height:80px;
+margin-bottom:20px;
 
-@keyframes fade{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
 }
 
 
-@media(max-width:800px){
+footer h3{
+
+color:#d4af37;
+font-size:30px;
+
+}
+
+
+footer p{
+
+margin-top:10px;
+
+}
+
+
+
+/* ANIMATION */
+
+.car-card,
+.service-card,
+.number-box{
+
+animation:fadeUp 1s ease;
+
+}
+
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.navbar{
+
+padding:20px;
+
+}
+
+
+.navbar ul{
+
+display:none;
+
+}
+
 
 .hero h1{
-font-size:35px;
+
+font-size:45px;
+
 }
 
-.stats,.boxes{
+
+.cars-grid,
+.service-container,
+.numbers{
+
+display:flex;
 flex-direction:column;
-}
 
-.card,.box{
-width:100%;
 }
 
 }
+
+
+
+/* END STYLE */
+
 </style>
 
 </head>
@@ -193,124 +451,288 @@ width:100%;
 <body>
 
 
-<header>
+
+<nav class="navbar">
 
 <div class="logo">
-<img src="logo.png">
+<img src="logo.png" alt="WASL Logo">
 </div>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Cars</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</nav>
 
-</header>
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Cars</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
 
 
 
 <section class="hero">
 
-<div>
+<video autoplay muted loop playsinline>
 
-<h1>
-Connecting Opportunities.
-<br>
-<span>Creating Value.</span>
-</h1>
+<source src="hero.mp4" type="video/mp4">
+
+</video>
+
+
+<div class="overlay"></div>
+
+
+<div class="hero-content">
+
+<h1>WASL | وَصْل</h1>
+
+<h2>Connecting Opportunities. Creating Value.</h2>
 
 <p>
-Premium vehicle sales and professional automotive solutions in Qatar.
+Professional Vehicle Sales & Marketing Services in Qatar
 </p>
 
-<a class="btn" href="#">
+
+<div class="buttons">
+
+<a href="https://wa.me/97471333920" class="gold-btn">
 Sell Your Car
+</a>
+
+
+<a href="#" class="outline-btn">
+Browse Cars
 </a>
 
 </div>
 
-</section>
 
-
-
-<section class="stats">
-
-<div class="card">
-<h2>500+</h2>
-<p>Vehicles Sold</p>
-</div>
-
-
-<div class="card">
-<h2>100%</h2>
-<p>Customer Trust</p>
-</div>
-
-
-<div class="card">
-<h2>24/7</h2>
-<p>Support</p>
 </div>
 
 
 </section>
+<section class="cars-section">
+
+<h2>Featured Cars</h2>
+
+<div class="cars-grid">
+
+
+<div class="car-card">
+
+<img src="cars/car1.jpg">
+
+<div>
+
+<h3>Luxury Vehicles</h3>
+
+<p>Premium vehicles selected for our customers.</p>
+
+</div>
+
+</div>
+
+
+
+<div class="car-card">
+
+<img src="cars/car2.jpg">
+
+<div>
+
+<h3>Quality Cars</h3>
+
+<p>Reliable cars with professional service.</p>
+
+</div>
+
+</div>
+
+
+
+<div class="car-card">
+
+<img src="cars/car3.jpg">
+
+<div>
+
+<h3>Smart Deals</h3>
+
+<p>Connecting buyers and sellers in Qatar.</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="numbers">
+
+
+<div class="number-box">
+
+<h2 class="counter">500+</h2>
+
+<p>Cars Sold</p>
+
+</div>
+
+
+
+<div class="number-box">
+
+<h2 class="counter">100+</h2>
+
+<p>Happy Clients</p>
+
+</div>
+
+
+
+<div class="number-box">
+
+<h2 class="counter">5+</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+
+
+</section>
+
 
 
 
 
 <section class="services">
 
+
 <h2>Our Services</h2>
 
 
-<div class="boxes">
+<div class="service-container">
 
-<div class="box">
+
+<div class="service-card">
+
 <h3>Vehicle Marketing</h3>
+
 <p>
-Professional advertising and buyer connection to sell your vehicle faster.
+Professional advertising, photos and customer handling.
 </p>
+
 </div>
 
 
-<div class="box">
+
+<div class="service-card">
+
 <h3>Car Valuation</h3>
+
 <p>
-Accurate market evaluation to achieve the best selling price.
+Accurate market evaluation to achieve the best price.
 </p>
+
 </div>
 
 
-<div class="box">
-<h3>Premium Support</h3>
+
+<div class="service-card">
+
+<h3>Sales Support</h3>
+
 <p>
-Complete assistance from listing until final sale.
+Complete support from listing until final sale.
 </p>
+
 </div>
 
 
+
 </div>
+
 
 </section>
 
 
 
 
+
 <footer>
 
+
+<img src="logo.png">
+
+
 <h3>WASL MOTOR</h3>
+
 
 <p>
 Connecting Opportunities. Creating Value.
 </p>
 
+
 <p>
-© 2026 WASL MOTOR Qatar
+Doha, Qatar | +974 71333920
 </p>
+
 
 </footer>
 
 
+
+
+
+<script>
+
+
+let counters=document.querySelectorAll(".counter");
+
+
+counters.forEach(counter=>{
+
+
+let target=parseInt(counter.innerText);
+
+let count=0;
+
+
+let timer=setInterval(()=>{
+
+
+count++;
+
+counter.innerText=count+"+";
+
+
+if(count>=target){
+
+clearInterval(timer);
+
+}
+
+
+},20);
+
+
+
+});
+
+
+</script>
+
+
+
 </body>
+
 </html>
