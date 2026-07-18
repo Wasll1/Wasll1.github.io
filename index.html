@@ -1,113 +1,256 @@
-<div class="buttons">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<a class="gold-btn" href="https://wa.me/97471333920">
+<title>WASL MOTOR | Premium Vehicle Sales</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#050505;
+    color:white;
+}
+
+/* Header */
+
+header{
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    background:#000;
+}
+
+.logo img{
+    width:130px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:16px;
+}
+
+
+/* Hero */
+
+.hero{
+    height:650px;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+    url("car.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+}
+
+.hero h1{
+    font-size:55px;
+    max-width:700px;
+}
+
+.hero span{
+    color:#d4af37;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 40px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+
+/* Counters */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:70px 5%;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    width:250px;
+    text-align:center;
+    border-radius:20px;
+}
+
+.card h2{
+    color:#d4af37;
+    font-size:45px;
+}
+
+
+/* Services */
+
+.services{
+    padding:60px 8%;
+}
+
+.services h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.boxes{
+    display:flex;
+    gap:25px;
+}
+
+.box{
+    flex:1;
+    padding:35px;
+    background:#111;
+    border:1px solid #333;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+}
+
+
+/* Footer */
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:40px;
+    margin-top:50px;
+}
+
+footer span{
+    color:#d4af37;
+}
+
+
+/* Animation */
+
+.hero div{
+    animation:fade 1.5s;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:35px;
+}
+
+.stats,.boxes{
+flex-direction:column;
+}
+
+.card,.box{
+width:100%;
+}
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+<img src="logo.png">
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Cars</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>
+Connecting Opportunities.
+<br>
+<span>Creating Value.</span>
+</h1>
+
+<p>
+Premium vehicle sales and professional automotive solutions in Qatar.
+</p>
+
+<a class="btn" href="#">
 Sell Your Car
 </a>
 
-
-<a class="outline-btn" href="#">
-Browse Cars
-</a>
-
-
-</div>
-
 </div>
 
 </section>
 
 
 
+<section class="stats">
 
-<section class="cars-section">
-
-<h2>Featured Cars</h2>
-
-
-<div class="cars-grid">
-
-
-<div class="car-card">
-
-<img src="cars/car1.jpg">
-
-<div>
-
-<h3>Luxury Vehicles</h3>
-
-<p>Premium cars ready for sale.</p>
-
-</div>
-
+<div class="card">
+<h2>500+</h2>
+<p>Vehicles Sold</p>
 </div>
 
 
-
-<div class="car-card">
-
-<img src="cars/car2.jpg">
-
-<div>
-
-<h3>Quality Selection</h3>
-
-<p>Trusted vehicles in Qatar.</p>
-
-</div>
-
+<div class="card">
+<h2>100%</h2>
+<p>Customer Trust</p>
 </div>
 
 
-
-<div class="car-card">
-
-<img src="cars/car3.jpg">
-
-<div>
-
-<h3>Smart Deals</h3>
-
-<p>Connecting buyers and sellers.</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-<section class="numbers">
-
-
-<div class="number-box">
-
-<h2 class="counter">500</h2>
-
-<p>Cars Sold</p>
-
-</div>
-
-
-<div class="number-box">
-
-<h2 class="counter">100</h2>
-
-<p>Happy Clients</p>
-
-</div>
-
-
-<div class="number-box">
-
-<h2 class="counter">5</h2>
-
-<p>Years Experience</p>
-
+<div class="card">
+<h2>24/7</h2>
+<p>Support</p>
 </div>
 
 
@@ -118,42 +261,36 @@ Browse Cars
 
 <section class="services">
 
-
 <h2>Our Services</h2>
 
 
-<div class="service-container">
+<div class="boxes">
 
-
-<div class="service-card">
-
+<div class="box">
 <h3>Vehicle Marketing</h3>
-
-<p>Professional advertising and customer handling.</p>
-
+<p>
+Professional advertising and buyer connection to sell your vehicle faster.
+</p>
 </div>
 
 
-<div class="service-card">
-
+<div class="box">
 <h3>Car Valuation</h3>
-
-<p>Accurate pricing based on market value.</p>
-
+<p>
+Accurate market evaluation to achieve the best selling price.
+</p>
 </div>
 
 
-<div class="service-card">
-
-<h3>Sales Support</h3>
-
-<p>Complete support until final transaction.</p>
-
+<div class="box">
+<h3>Premium Support</h3>
+<p>
+Complete assistance from listing until final sale.
+</p>
 </div>
 
 
 </div>
-
 
 </section>
 
@@ -162,73 +299,18 @@ Browse Cars
 
 <footer>
 
-
-<div class="footer-logo">
-
-<img src="logo.png">
-
-</div>
-
-
 <h3>WASL MOTOR</h3>
-
 
 <p>
 Connecting Opportunities. Creating Value.
 </p>
 
-
 <p>
-Doha, Qatar | +974 71333920
+© 2026 WASL MOTOR Qatar
 </p>
-
-
-<div class="copyright">
-
-© 2026 WASL MOTOR
-
-</div>
-
 
 </footer>
 
 
-
-<script>
-
-let counters=document.querySelectorAll(".counter");
-
-
-counters.forEach(counter=>{
-
-let target=+counter.innerText;
-
-let count=0;
-
-
-let update=setInterval(()=>{
-
-count+=5;
-
-counter.innerText=count;
-
-
-if(count>=target){
-
-counter.innerText=target;
-
-clearInterval(update);
-
-}
-
-},20);
-
-
-});
-
-</script>
-
-
 </body>
-
 </html>
